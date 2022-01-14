@@ -31,4 +31,13 @@ Another usefull tool is moving files from the client (your computer) to the serv
 **Setting an SSH key**
 You start by generating a key using the command ssh-keygen, this will generate a file afterward you login again and upload the file with the public key using the scp method. But first you will create a directory inside the server using mkdir command.
 
+![Image](Picture6.PNG)
 
+**Optimizing Remote Running**
+It is possible to run remote more smoothly by using combined commands for example can you run ls when you login immedietly like:
+
+![Image](Picture7.PNG)
+
+You can also use semicolons to run multiply commands like:
+
+"cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI".
