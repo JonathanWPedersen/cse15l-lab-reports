@@ -32,7 +32,7 @@ The error that inputting the files results in is
 
 The failure here is that the output is not the expected output, the output was [Not a link, some-page.html, ], the problem is the first and last part, the first part is an image and not a link and the last part is empty and not a real link. The solution in the code changes is to only output code where inside the brackets the word "link" is contained.
 
-This code is depending on how we determine what is a valid link, In this change we have simply said that a link is valid as long as there is the word *link* inside, we could also have made this conditional on not having ! infront or having no spaces inside the link. 
+This code is depending on how we determine what is a valid link, In this change we have simply said that a link is valid as long as there is the word *link* inside, we could also have made this conditional on not having ! infront or having no spaces inside the link or the ending of the link (has to be .com, .dk, ...), so while this solves one case it still leaves multiple other possible ways to break the code depending on what you value a valid input.
 
 
 ## Third code changes
@@ -49,4 +49,4 @@ The error that inputting the files results in is
 
 ![Image](Picture2.9.PNG)
 
-The error is in the situation were we have an openbracket ([) but not an close bracket (]), this creates problem with the code changes made in the second code changes, the code from that is using "substring(nextOpenBracket+1, nextCloseBracket)", where the "nextCloseBracket" is behind "nextOpenBracket" and therefore throws an error, this is solved by using if statement "nextCloseBracket < nextOpenBracket" to make sure this doens't happen by break.
+The error is in the situation were we have an openbracket ([) but not an close bracket (]), this creates problem with the code changes made in the second code changes, the code from that is using "substring(nextOpenBracket+1, nextCloseBracket)", where the "nextCloseBracket" is behind "nextOpenBracket" and therefore throws an error, this is solved by using if statement "nextCloseBracket < nextOpenBracket" to make sure this doens't happen by having the command "break" afterwards.
