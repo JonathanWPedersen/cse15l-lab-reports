@@ -2,7 +2,7 @@
 
 **Installing VScode**
 
-First you will want to install VScode, this is done by going to the following page and download:
+First you will want to install VScode, this is done by going to the following page ([VScode](https://code.visualstudio.com/)) and download:
 ![Image](Picture2.PNG)
 When you have downloaded you should open it and it should look like:
 ![Image](Picture1.png)
@@ -13,9 +13,19 @@ Next we want to connect to the external server of UCSD this can be done by typin
 
 ![Image](Picture3.PNG)
 
+If you get this problem you can try reseting your password, this can be done in the account lookup tool where you can both see your account username and change your password - [Account lookup tool](https://sdacs.ucsd.edu/~icc/index.php).
+
+
 **Trying some commands**
 
-Next we want to try some commands, the most common are cd, ls, cp, cat ...
+Next we want to try some commands, the most common are the following, which can be used with the following code:
+
+* "cd": this allow you to change directory
+* "ls": gives you a list of folders and files inside a directory
+* "cp": allow you to copy a file.
+* "cat": reads the data from a file and output the content.
+
+
 You will want to try several of these, below is a picture of doing the ls command.
 
 ![Image](Picture4.PNG)
