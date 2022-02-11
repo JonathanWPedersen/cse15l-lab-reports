@@ -14,3 +14,8 @@ This then allows me to enter the server using just:
 
 As can be seen typing "shh ieng6" is much easier than "ssh cs15lwi22aqk@ieng6.ucsd.edu".
 
+Likewise this shortcut can also be used when moving files using the "scp" command, like this:
+
+![Image](Picture33.PNG)
+
+Here the file MarkdownParse.java is moved over with no problem and I then login to see that it has been copied over. 
