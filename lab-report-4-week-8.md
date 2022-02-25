@@ -17,8 +17,23 @@ The output is:
 
 ## Snippet 2:
 
+For snippet 2, I exptect the output to be ["a.com", "a.com(())", "example.com"], the reason for this is that I have the case of a nested brackets, this therefore makes me expect that for the first one the inner \[nested link](a.com), its different for parentheiss which is why I expect a.com(()). 
+
+The output is:
+
+* MarkkdownParse:
+
+![Image](Picture43.PNG)
+
+* reviewed MarkdownParse:
+
+Test is passed for this one.
 
 ## Snippet 3:
+
+The expected output is ["https://ucsd-cse15l-w22.github.io/"], this is the only part because all the others hold spaces inside [] or space inside the link itself (which is not allowed)
+
+
 
 
 ## code changes:
