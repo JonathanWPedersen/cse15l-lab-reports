@@ -20,17 +20,17 @@ If you get this problem you can try reseting your password, this can be done in 
 
 Next we want to try some commands, the most common are the following, which can be used with the following code:
 
-* "cd": this allow you to change directory
-* "ls": gives you a list of folders and files inside a directory
-* "cp": allow you to copy a file.
-* "cat": reads the data from a file and output the content.
+* `cd`: this allow you to change directory
+* `ls`: gives you a list of folders and files inside a directory
+* `cp`: allow you to copy a file.
+* `cat`: reads the data from a file and output the content.
 
 
 You will want to try several of these, below is a picture of doing the ls command.
 
 ![Image](Picture4.PNG)
 
-Note that I dont use the ls -a command here because I can't connect and therefore use the terminal for windows.
+Note that I dont use the `ls -a` command here because I can't connect and therefore use the terminal for windows.
 
 ## Moving files with scp
 
@@ -50,4 +50,4 @@ It is possible to run remote more smoothly by using combined commands for exampl
 
 You can also use semicolons to run multiply commands like:
 
-"cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI".
+`cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`.
