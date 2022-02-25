@@ -4,6 +4,14 @@ In this lab report I will be using my own [MarkdwonParse](https://github.com/Jon
 
 ## tests
 
+The tests I created to test each is:
+
+![Image](Picture46.PNG)
+
+
+It is the same for both.
+
+
 
 ## Snippet 1:
 
@@ -51,4 +59,8 @@ The code outputs:
 
 ## code changes:
 
+For snippet 1, the problem for both is that the link "url.com" is outputted, this can be solves relativly simply be making it so that if we hit a backtick, then all code from that backtick to the next will be its own seperat when it comes to creating links, so if it creates its own link it will output but if its between like for "url.com" it wont. This can be done by creating a variable `int backtick` and then if `backtick != -1` finding the next one and treating everyone between as one unit. This will also require some changes to the other parts.
 
+For snippet 2 the reviewed passes the test, but my own does not, this is because my own does not take into account that parenthesis also need to belong to each but simply takes the first the best. The solution to this is to also create a helper method for this that takes into account that the "end parenthesis" has to be the partner of the "open paranthesis" that starts the link for it to be the end and all other are to be treated as part of the link.
+
+For snippet 3 the problem is spaces and new lines inside the parenthesis. The solution to this is to create code that can be "trim" the spaces and new lines inside the parenthesis. But not spaces inside the link, because in that case the link is invalid. 
