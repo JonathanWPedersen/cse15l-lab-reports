@@ -17,10 +17,12 @@ My own code gave the result `[]` and the given code gave `./target.md`, I expect
 
 As can be seen the problem is in the highlighted part, the easy correction here is to simply remove the part `nextOpenBracket + 1 == nextCloseBracket`. 
 
-[link](\(foo\))
-
 
 ## Problem 2:
 
-For problem 2, my own code gives the result `[\(foo\]` and the provided code is `[\(foo\)]`. The correct code is the last one since it is the same that .md does. 
+For problem 2, my own code gives the result `[\(foo\]` and the provided code is `[\(foo\)]`. The correct code is the last one since it is the same that .md does. Therefore there must be a problem with my own code, more specifically there is a problem here:
 
+
+![Image](Picture53.PNG)
+
+The problem is that its the first ) that is seen and then my code stops, the correct implementation would be to create helper method that pairs the [] and () and righlt sees that it is the outer () that is the start and end and the ones inside is part of the link.
