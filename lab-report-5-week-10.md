@@ -13,8 +13,14 @@ As can be seen there are several code parts that do not match, I look at the par
 
 My own code gave the result `[]` and the given code gave `./target.md`, I expected the reuslt to be `./target.md` so I need to change my own code in MarkdownParse, more specifically it is this part:
 
+![Image](Picture52.PNG)
 
+As can be seen the problem is in the highlighted part, the easy correction here is to simply remove the part `nextOpenBracket + 1 == nextCloseBracket`. 
+
+[link](\(foo\))
 
 
 ## Problem 2:
+
+For problem 2, my own code gives the result `[\(foo\]` and the provided code is `[\(foo\)]`. The correct code is the last one since it is the same that .md does. 
 
